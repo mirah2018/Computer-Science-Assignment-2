@@ -1,0 +1,40 @@
+Module Module1
+
+    Sub Main()
+        Dim Count As Integer
+        Dim NoD As String = ""
+        Dim MD As Char = "y"
+
+        Do
+
+            Console.WriteLine("How many donuts?")
+            Count = Console.ReadLine
+
+
+
+            If Count >= 10 Then
+                Console.WriteLine("number of donuts: many")
+                NoD = Console.ReadLine
+
+                Console.WriteLine("Are there more donuts?")
+                MD = Console.ReadLine
+
+
+
+
+            ElseIf Count < 10 Then
+                Console.WriteLine("number of donuts: " & Count)
+                Console.WriteLine("Are there more donuts?")
+                MD = Console.ReadLine
+                
+            End If
+
+        Loop Until MD <> "y"
+
+
+
+
+        Console.ReadKey()
+    End Sub
+
+End Module
