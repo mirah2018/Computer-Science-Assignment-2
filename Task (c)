@@ -1,0 +1,34 @@
+Module Module1
+
+    Sub Main()
+        Dim Word As String = " "
+        Dim x, NewWord As String
+        Dim y, z As Integer
+        Dim t As Char
+        Console.WriteLine("Enter word:")
+        Word = Console.ReadLine
+
+        x = Left(Word, 1)
+
+        y = x
+
+        For z = 1 To Len(Word) + 1
+            If Mid(Word, z + 1, Len(Word)) Then
+                y = y & "*"
+
+            Else
+                y = y & Mid(Word, z + 1, Len(Word))
+
+
+
+
+            End If
+        Next
+
+        Console.WriteLine(y)
+        Console.ReadKey()
+
+    End Sub
+
+
+End Module
