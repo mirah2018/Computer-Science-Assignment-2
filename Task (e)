@@ -1,0 +1,28 @@
+Module Module1
+
+    Sub Main()
+       
+        Dim F As String
+        Dim Z As String
+        
+
+        Console.WriteLine("Enter a sentence:")
+        Z = Console.ReadLine
+
+
+        F = (Replace(Z, "not that bad", "good"))
+
+
+
+
+
+        Console.WriteLine(F)
+
+        Console.ReadKey()
+
+
+    End Sub
+
+
+
+End Module
