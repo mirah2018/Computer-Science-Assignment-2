@@ -1,0 +1,33 @@
+Module Module1
+
+    Sub Main()
+        Dim A, B, D, F, E, G, K, W, L, H, Word As String
+        Dim SpacePos, C, Z, X, J, M, N, LenWord As Integer
+
+        Console.WriteLine("Enter Two Strings:")
+        Word = Console.ReadLine
+
+        LenWord = Len(Word)
+        SpacePos = InStr(Word, " ")
+
+        Z = SpacePos + 1
+        X = SpacePos - 1
+        N = SpacePos
+        A = Right(Word, X)
+        B = Mid(Word, J + 2, SpacePos - 1)
+        G = InStr(Word, B)
+        H = Mid(Word, SpacePos + 1, 1)
+
+        C = InStr(Word, Z) 'this is correct 
+        D = Right(Word, LenWord - Z) 'the second word wihtout the first letter
+        E = Left(Word, 1) ' the first letter 
+        J = InStr(Word, E) ' this is the first letter
+
+
+
+        Console.WriteLine(H & B & " " & E & D)
+
+        Console.ReadKey()
+    End Sub
+
+End Module
