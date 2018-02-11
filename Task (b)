@@ -1,0 +1,36 @@
+Module Module1
+
+    Sub Main()
+        Dim STR1, x, y As String
+        Dim LENstr As Integer
+
+        Console.WriteLine("Enter a string: ")
+        STR1 = Console.ReadLine
+
+
+        If Len(STR1) > 2 Then
+
+
+            x = Left(STR1, 2)
+            y = Right(STR1, 2)
+
+
+            Console.WriteLine(x & y)
+
+
+
+        Else
+
+
+            Console.WriteLine("Empty")
+            STR1 = Console.ReadLine
+
+
+        End If
+        Console.ReadKey()
+
+
+    End Sub
+
+End Module
+
